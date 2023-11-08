@@ -1,0 +1,8 @@
+{
+    "rpcs": [
+        "http://localhost:26657",
+        "https://rpc-kujira.mintthemoon.xyz"
+    ],
+    "db_file": "monikers.json",
+    "poll_seconds": 60
+}
