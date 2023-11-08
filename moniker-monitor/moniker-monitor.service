@@ -1,0 +1,14 @@
+[Unit]
+Description=moniker-monitor
+After=network.target
+
+[Service]
+Type=simple
+User={{ USER }}
+ExecStart=/usr/bin/python3 -u /home/{{ USER }}/moniker-monitor/moniker-monitor.py
+Restart=on-abort
+Environment="SLACK_WEBHOOK_URL={{ SLACK_WEBHOOK_URL }}"
+WorkingDirectory=/home/{{ USER }}/moniker-monitor
+
+[Install]
+WantedBy=multi-user.target

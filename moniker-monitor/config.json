@@ -3,6 +3,6 @@
         "http://localhost:26657",
         "https://rpc-kujira.mintthemoon.xyz"
     ],
-    "db_file": "monikers.json",
+    "db_file": "peers.json",
     "poll_seconds": 60
 }
